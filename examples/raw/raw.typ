@@ -1,4 +1,4 @@
-#import "term.typ": term
+#import "../../term.typ": term
 
 #term(
   ps1: [`$`],

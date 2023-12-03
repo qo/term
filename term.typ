@@ -74,16 +74,19 @@
   input: [],
   output: [],
 ) = {
-  return box(
-    width: 300pt,
-    stack(
-      dir: ttb,
-      toolbar(),
-      main(
-        ps1: ps1,
-        input: input,
-        output: output,
-      ),
+  return align(
+    left, 
+    box(
+      width: 300pt,
+      stack(
+        dir: ttb,
+        align(left, toolbar()),
+        main(
+          ps1: ps1,
+          input: input,
+          output: output,
+        ),
+      )
     )
   )
 }

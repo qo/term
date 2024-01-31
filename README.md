@@ -17,7 +17,8 @@ term.typ`],
 
 ## output
 
-<img src="./examples/raw/raw.svg" width="50%">
+<!-- don't even ask -->
+<img src="./examples/raw/raw.svg#svgView(viewBox(50, 50, 400, 200))" width="500" height="300">
 
 # why
 
@@ -39,8 +40,8 @@ curl https://raw.githubusercontent.com/qo/term/main/term.typ --output term.typ
 #import "term.typ": term
 ```
 
-## pass the content parameter to the `term` function
+## pass the `content` parameter to the `term` function
 
 # examples
 
-more examples can be found in `examples` directory
+examples can be found in `examples` directory

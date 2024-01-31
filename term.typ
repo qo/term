@@ -50,9 +50,7 @@
 }
 
 #let main(
-  ps1: [],
-  input: [],
-  output: [],
+  content: [],
 ) = {
   return block(
     width: 100%,
@@ -63,16 +61,13 @@
     fill: main_bg_color,
     stroke: stroke_color,
     [
-      #ps1 #input \
-      #output
+      #content
     ]
   )
 }
 
 #let term(
-  ps1: [],
-  input: [],
-  output: [],
+  content: [],
 ) = {
   return align(
     left, 
@@ -82,9 +77,7 @@
         dir: ttb,
         align(left, toolbar()),
         main(
-          ps1: ps1,
-          input: input,
-          output: output,
+          content: content,
         ),
       )
     )

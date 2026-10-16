@@ -82,3 +82,9 @@ typst compile --root . examples/transcript/transcript.typ transcript.svg
 ```
 
 The template requests the `Roboto Mono` font. Install it for the intended appearance; Typst uses an available fallback if it is missing.
+
+## Development checks
+
+Run `python scripts/check-examples.py` to compile every example, or pass `--typst /path/to/typst` when the binary is not on your PATH. Outputs go to a temporary directory.
+
+GitHub Actions runs the same check on pull requests, pushes to `main`, and every Monday, using both Typst 0.15.1 and the latest stable release. A failure on the latest release identifies a compatibility change to investigate before upgrading. The workflow is also available from Actions via **Run workflow**. Dependabot groups GitHub Actions updates into at most two open PRs for review; updates are not merged automatically.
